@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{margin: 0;
+        padding: 0;}
+        header{
+            background-color: rgb(248, 118, 118);
+            height: 80px;
+        }
+        ul{
+            float: right;
+            list-style-type:none;
+            margin-top: 25 px;
+            
+        
+        }
+        ul li{
+            display: inline-block;
+            padding-top: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+            
+        
+
+        }
+        ul li a{text-decoration: none;
+        color: antiquewhite;
+        border: 1px solid  orange;
+        
+        
+        
+    }
+    ul li a:hover{background-color: white;
+                   color: black;}
+                   
+   .main1{position: absolute;
+        top:60%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        background-color: rgb(231, 101, 91);
+        height: 500px;
+        width:700px;
+         } 
+  .main1 h4{color: rgb(219, 205, 205);
+    font-size: 30px;
+    margin-left: 60px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;}  
+    
+    
+    .main1 td{color: rgb(221, 230, 238);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+    
+    
+    th,td{padding: 6px;}
+
+    table{margin-left: 25px;
+        margin-top: 20px;
+        border: 2px solid rgb(226, 217, 217);
+        border-collapse: collapse;
+    }
+
+     th{
+
+        font-size: 15px;
+    background-color:rgb(233, 195, 126);
+color:red;}       
+
+</style>
+
+<body style="background-color: rgba(245, 206, 180, 0.884);">
+    <header>
+       <div class="main">
+        <ul>
+            <li> <a href="/">Home</a></li>
+                <li><a href="/login">Login</a></li>
+            
+        </ul>
+       </div> 
+    </header>
+    <div class="main1">
+        
+    <table border="1px">
+        <thead>
+            <tr>
+            <th>DonationCamp</th>
+            <th>Date Of Donation</th>
+            <th>No Of Units</th>
+            <th>Location</th>
+            <th>Email</th>
+        
+            </tr>
+            
+            
+
+        </thead>
+        {% for i in elist %}
+        <tr>
+            <td>{{i[0]}}</td>
+            <td>{{i[1]}}</td>
+            <td>{{i[2]}}</td>
+            <td>{{i[3]}}</td>
+            <td>{{i[4]}}</td>
+        
+            
+        
+
+
+            
+        </tr>
+        {% endfor %}
+    </table>
+    </div>
+   
+    <br>
+    <br>
+
+    </body>
+
+</html>

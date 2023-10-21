@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        header{
+            background-color: rgb(248, 118, 118);
+            height: 80px;
+        }
+        ul{
+            float: right;
+            list-style-type:none;
+            margin-top: 25 px;
+            
+        
+        }
+        ul li{
+            display: inline-block;
+            padding-top: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+            
+        
+
+        }
+        ul li a{text-decoration: none;
+        color: antiquewhite;
+        border: 1px solid  orange;
+        
+        
+        
+    }
+    ul li a:hover{background-color: white;
+                   color: black;}
+
+
+  .main1{position: absolute;
+        top:53%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        background-color: rgb(231, 101, 91);
+        height: 300px;
+        width:590px;
+         } 
+    .main1 h1{color: rgb(219, 205, 205);
+    font-size: 30px;
+    padding-left: 20px;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}  
+    
+    
+    .main1 td{color: aqua;}
+    .main1 table{border: 2px solid rgb(226, 217, 217);}
+                   
+    </style>
+</head>
+
+<body style="background-color: rgba(245, 206, 180, 0.884);">
+    <header>
+        <div class="main">
+            <ul>
+                <li><a href="/">Home</li>
+                <li> <a href="/login">Login </a></li>
+            </ul>
+            
+
+        </div>
+    </header>
+    <div class="main1">
+        <h1>Register Here..</h1>
+    <center>
+        <form action="/insert" method="post">
+        
+            <table border="px">
+                
+                
+                <tr>
+                    <td>Donationcamps</td>
+                    <td><select name="camp">
+                        <option disabled="true" selected >--select camp-</option>
+                        <option>Rudra Blood Park Foundation</option>
+                        <option>DombiVali Blood Center</option>
+                        <option>Plasma Blood Bank</option>
+                        <option>ab+</option>
+                        <option>a-</a-></option>
+                        <option>b-</option>
+                        <option>o-</o-></option>
+                        <option>ab-</option>
+                    </select></td>
+                </tr>
+
+                <tr>
+                    <td>Date of Donation</td>
+                    <td><input type="date" name="date" id="date"></td>
+                </tr>
+                <tr>
+                    <td>No: of units</td>
+                    <td><input type="text" name="nou" id="nou"></td>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td><input type="text" name="loc" id="loc"></td>
+                </tr>
+
+            </table>
+            <br>
+            <br>
+            <input type="reset" value="refresh">&nbsp;
+            <input type="submit" value="submit">
+        </form>
+    </center>
+
+    </div>
+    
+   
+</body>
+
+</html>

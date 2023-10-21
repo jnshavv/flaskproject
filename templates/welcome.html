@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+         }
+        header{
+            background-color: rgb(248, 118, 118);
+            height: 80px;
+        }
+        ul{
+            float: right;
+            list-style-type:none;
+            margin-top: 25 px;
+        }
+        ul li{
+            display: inline-block;
+            padding-top: 30px;
+
+        }
+        ul li a{text-decoration: none;
+        color: antiquewhite;
+        border: 1px solid  orange;
+        padding: 5px 20px;
+    }
+    ul li a:hover{background-color: white;
+                   color: black;
+    }
+    .logo img{
+            float:left;
+            width:20px;
+            height: auto;
+    }
+    .main{max-width: 1200px ;
+           margin: auto;}
+     .title{
+        position: absolute;
+        top:23%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        background-color: rgb(243, 215, 154);
+        height: 100px;
+        width:1250px;
+        
+        
+    
+     } 
+     .title h4{color: red;
+    font-size: 30px;
+    padding-left: 20px;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }   
+    .bloodcentre{position: absolute;
+        top:53%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        background-color: rgb(204, 87, 79);
+        height: 270px;
+        width:590px;
+         } 
+
+     .bloodcentre h6{color: aliceblue;
+                      font-size: 18px;
+                       margin-top: 26px;
+                    text-align: center;}
+      .bloodcentre table{
+    
+         margin-top: 20px;
+         border-collapse: collapse;
+         margin-left: 20px;
+        
+      } 
+      .bloodcentre th{font-size: 15px;
+    background-color:rgb(233, 195, 126);
+color:red;}     
+
+
+       th,td{padding: 6px;}
+         
+        .bloodcentre table,th,td{border: 2px solid rgb(202, 184, 184);}
+
+  tr:nth-child(even){background-color: rgb(235, 243, 191);}
+  tr:nth-child(odd){background-color: rgb(233, 177, 57);}
+
+    </style>
+</head>
+
+<body style="background-color: rgba(214, 116, 51, 0.884);">
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="C:\Users\Jinsha\Desktop\images\templates\im3.png">
+
+            </div>
+            <ul>
+                
+    <li><a href="/">Home</a></li>
+    <li><a href="/register">Donor Registration</a></li>
+   <li> <a href="/login">Login </a></li>
+   <li> <a href="/donors">Donors</a></li>
+    <li><a href="/sendr">Send Request</a></li>
+    <li><a href="/viewr">View Request</a></li>
+    <li><a href="/camp">Camps</a></li>  
+            </ul>
+
+        </div>
+        
+        <div class="bloodcentre">
+            <h6>
+               Blood Donation Camps Schedule 01-15 August 2015
+            </h6>
+            <table>
+                <thead>
+                    <tr>
+                    <th>Name</th>
+                    <th>date</th>
+                
+            
+                    <th>time</th>
+                    <th>Day</th>
+                    <th>Venue</th>
+                    
+                </tr>
+                <tr>
+                    <td>Rudra Blood Park Foundation</td>
+                    <td>2/08/2022</td>
+                    <td>9am-5pm</td>
+                    <td>Tuesday</td>
+                    <td>Dombivili East</td>
+                </tr>
+                <tr>
+                 <td>DombiVali Blood Center</td>
+                 <td>4/8/2022</td>
+                 <td>12pm-5pm</td>
+                 <td>Thursday</td>
+                 <td>Dombivali East</td>
+                </tr>
+                <tr>
+                    <td>Plasma Blood Bank</td>
+                    <td>6/08/2022</td>
+                    <td>2pm-6pm</td>
+                    <td>Saturday</td>
+                    <td>Dombivali East</td>
+                </tr>
+                </thead>
+
+                
+            </table>
+
+        </div>
+        <div class="title">
+            <marquee><h4>Donate Blood Save lives</h4></marquee>
+        </div>
+    </header>
+
+    
+</body>
+
+</html>
